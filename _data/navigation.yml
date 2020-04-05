@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: contact me
+  link: /contact/
+- name: instax365
+  link: /instaxdiaries/

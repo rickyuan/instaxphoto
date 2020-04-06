@@ -1,8 +1,8 @@
 - name: Home
-  link: /
+  link: /index.html
 - name: About
-  link: /about/
+  link: /about/index.html
 - name: contact me
-  link: /contact/
+  link: /contact/index.html
 - name: instax365
-  link: /instaxdiaries/
+  link: /instaxdiaries/index.html

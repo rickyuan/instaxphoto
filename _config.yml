@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Instax by Grace
-url: "https://www.instaxgo.com"
+title: Instax365 by Grace
+url: "https://www.instax365.com"
 baseurl:
 google_analytics_key:
 
@@ -16,9 +16,13 @@ author:
 social:
   name: Grace
   links:
-    - https://www.instaxgo.com
+    - https://www.instax365.com
 
 image_process: ?imageView2/5/w/800/h/600/format/jpg/q/80
+
+collections: 
+  instaxdiaries:
+    output: true
 
 # -----
 # Build
@@ -26,10 +30,6 @@ image_process: ?imageView2/5/w/800/h/600/format/jpg/q/80
 timezone: Etc/UTC
 
 permalink: pretty
-
-collections:
-  instaxdiaries:
-    output: true
 
 defaults:
   -

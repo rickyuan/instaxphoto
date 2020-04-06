@@ -2,7 +2,5 @@
   link: /index.html
 - name: About
   link: /about/index.html
-- name: contact me
+- name: Contact me
   link: /contact/index.html
-- name: instax365
-  link: /instaxdiaries/index.html

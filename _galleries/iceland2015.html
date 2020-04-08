@@ -1,13 +1,19 @@
 ---
-title: Instax square diaries 365
-layout: galleries
+title: Iceland 2015
+layout: default
+photos:
+  - image: http://q89fh2b8w.bkt.clouddn.com/instaxdiary/201902/2019%202%205.jpg
+    caption: Flamingo - San Jose, US
+  - image: http://q89fh2b8w.bkt.clouddn.com/instaxdiary/201902/2019%202%206.jpg
+    caption: Giraffe - Wellington, NZ
+  - image: http://q89fh2b8w.bkt.clouddn.com/instaxdiary/201902/2019%202%207.jpg
+    caption: Penguin - Mexico City, MX
 ---
 
 <ul class="gallery">
-  {% for instaxdiary in site.instaxdiaries %}
-    <li><img src="{{ instaxdiary.image_path }}{{ site.image_process }}"><p>{{ instaxdiary.title }}</p><p>{{ instaxdiary.caption }}</p></li>
-  {% endfor %}
-  <li class="spacer"></li>
+  {% for photo in page.photos %}
+    <li style="background-image: url('{{ photo.image }}')"><a title="{{ photo.caption }}" href="{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
+  {% endfor %}  <li class="spacer"></li>
   <li class="spacer"></li>
   <li class="spacer"></li>
   <li class="spacer"></li>

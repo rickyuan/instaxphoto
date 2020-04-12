@@ -1,11 +1,10 @@
 ---
 title: Instax square diaries 365
-layout: galleries
 ---
-
-<ul class="gallery">
+<p>This is a project I made in 2019, the first day counted from the chinese new year. Hope you like them. @Grace</p>
+<ul class="gallery2">
   {% for instaxdiary in site.instaxdiaries %}
-    <li><img src="{{ instaxdiary.image_path }}{{ site.image_process }}"><p>{{ instaxdiary.title }}</p><p>{{ instaxdiary.caption }}</p></li>
+    <li><img src="{{ instaxdiary.image_path }}{{ site.image_process_square }}"><p>{{ instaxdiary.title }}</p><p>{{ instaxdiary.caption }}</p></li>
   {% endfor %}
   <li class="spacer"></li>
   <li class="spacer"></li>

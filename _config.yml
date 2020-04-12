@@ -18,7 +18,8 @@ social:
   links:
     - https://www.instax365.com
 
-image_process: ?imageView2/5/w/800/h/600/format/jpg/q/80
+image_process_square: ?imageView2/5/w/800/h/600/format/jpg/q/80
+image_process_fixheight: ?imageView2/1/w/800/h/800/format/jpg/q/80
 
 collections: 
   instaxdiaries:
@@ -42,11 +43,12 @@ defaults:
       layout: "default"
       text_width: true
       image: /uploads/1.jpg
-  -
-    scope:
-      path: "index.html"
-    values:
-      text_width: false
+#  -
+#    scope:
+#      path: ""
+#    values:
+#      text_width: false
+
 
 plugins:
   - jekyll-sitemap

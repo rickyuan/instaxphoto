@@ -23,13 +23,11 @@
 		{% endif %}
 	</head>
 
-	<body {% if page.text_width %}class="text-width"{% endif %}>
+	<body>
 		<div class="wrap">
 			<header>
-				<h1><a href="{{ page.url }}">Instax 365</a></h1>
-				{% include navigation.html %}
+				<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 			</header>
-			<p>This is a project I made in 2019, the first day counted from the chinese new year. Hope you like them. @Grace</p>
 			{{ content }}
 			<footer>
 				Grace © 2020

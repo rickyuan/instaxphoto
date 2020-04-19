@@ -32,7 +32,9 @@ nav {
       color: #fefefe; }
 
 img {
-  max-width: 100%; }
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle; }
 
 footer {
   text-align: center;
@@ -85,43 +87,6 @@ header h1 a {
       .gallery li a:hover {
         background: rgba(255, 255, 255, 0.3); }
       .gallery li a p {
-        font-size: 0.8em; }
-
-.gallery2 {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px; }
-  .gallery2 li {
-    padding: 0;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex: 1 0 200px;
-    margin: 10px;
-    box-sizing: border-box;
-    max-width: 450px; }
-    .gallery2 li:before {
-      content: '';
-      padding-top: 100%;
-      display: block;
-      float: left; }
-    .gallery2 li.spacer {
-      height: 0;
-      margin-top: 0;
-      margin-bottom: 0; }
-      .gallery2 li.spacer:before {
-        padding: 0; }
-    .gallery2 li a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      transition: background .2s ease; }
-      .gallery2 li a:hover {
-        background: rgba(255, 255, 255, 0.3); }
-      .gallery2 li a p {
         font-size: 0.8em; }
 
 .caption {
@@ -288,3 +253,74 @@ select {
 
 .cms-editor-active .editor-link {
   display: block; }
+
+.gallery2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px; }
+  .gallery2 li {
+    padding: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 200px;
+    margin: 10px;
+    box-sizing: border-box;
+    max-width: 450px; }
+    .gallery2 li:before {
+      content: '';
+      padding-top: 100%;
+      display: block;
+      float: left; }
+    .gallery2 li.spacer {
+      height: 0;
+      margin-top: 0;
+      margin-bottom: 0; }
+      .gallery2 li.spacer:before {
+        padding: 0; }
+    .gallery2 li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: background .2s ease; }
+      .gallery2 li a:hover {
+        background: rgba(255, 255, 255, 0.3); }
+      .gallery2 li a p {
+        font-size: 0.8em; }
+
+.cards {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px; }
+
+.card {
+  flex: 0 0 46.5%;
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 10px; }
+
+.card .card_content {
+  background-color: #f2f2f2; }
+  .card .card_content .title {
+    padding: 5px 10px;
+    font-size: 1.2em;
+    color: #333; }
+  .card .card_content .body {
+    padding: 5px 10px;
+    font-size: 0.85em;
+    color: #666; }
+
+.card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: color .2s ease; }
+  .card a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #000; }

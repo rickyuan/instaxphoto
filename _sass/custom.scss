@@ -46,6 +46,65 @@
 	}
 }
 
+.card_top {
+	width: 100%;
+	height: 340px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	img {
+		width: 100%;
+	}
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		transition: background .2s ease;
+		img {
+			transition: all .4s ease-in-out;
+		}
+
+		&:hover img{
+			transform: scale(1.05);
+			transform-origin: center;
+		}
+	}
+}
+
+.card_top .card_content {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	.title {
+		padding: 10px 10px 0 10px;
+		font-size: 1.2em;
+		color: #333;
+	}
+	.body {
+		padding: 0 10px 10px 10px;
+		font-size: 0.85em;
+		color: #666;
+	}
+}
+
+
+.cards .card_content {
+	position: absolute;
+	pointer-events: none;
+	bottom: 0;
+	width: 100%;
+	.title {
+		padding: 10px 10px 0 10px;
+		font-size: 1.2em;
+		color: #333;
+	}
+	.body {
+		padding: 0 10px 10px 10px;
+		font-size: 0.85em;
+		color: #666;
+	}
+}
+
 .cards {
 	padding: 0;
 	margin: 0;
@@ -53,45 +112,69 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -10px;
-}
-
-.card_top {
-	width: 100%;
-	height: 340px;
-	border-radius: 10px;
-	overflow: hidden;
-}
-
-.card {
-		flex: 0 0 46.5%;
-		box-sizing: border-box;
+	li {
+		padding: 0;
+		flex: 1 0 500px;
 		margin: 10px;
+		box-sizing: border-box;
+		max-width: 600px;
 		border-radius: 10px;
 		overflow: hidden;
-}
+		position: relative;
 
-.card .card_content {
-	background-color: #f2f2f2;
-	.title {
-		padding: 5px 10px;
-		font-size: 1.2em;
-		color: #333;
-	}
-	.body {
-		padding: 5px 10px;
-		font-size: 0.85em;
-		color: #666;
-	}
-}
+		&.spacer {
+			height: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			&:before {
+				padding: 0;
+			}
+		}
+		a {
+			display: block;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			transition: all .2s ease;
+			&:before {
+				content: '';
+				padding-top: 70%;
+				display: block;
+				float: left;
+			}
 
-.card a {
-		display: block;
-		width: 100%;
-		height: 100%;
-		transition: color .2s ease;
-
-		&:hover {
-			background: rgba(255,255,255,.3);
-			color: #000;
+			&:hover{
+				transform: scale(1.05);
+				transform-origin: center;
+			}
+		p {
+			font-size: 0.8em;
+		}
 		}
 	}
+}
+
+
+.gallery_flow{
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+	.figure {
+		display: block;
+		height: 400px;
+		flex-grow: 1;
+		padding: 5px;
+	}
+	img {
+		height: 100%;
+		object-fit: cover;
+		max-width: 100%;
+		min-width: 100%;
+		vertical-align: bottom;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+}

@@ -1,6 +1,6 @@
-- name: Home
+- name: 首页
   link: /index.html
-- name: About
+- name: 关于
   link: /about/index.html
-- name: Contact
+- name: 联系
   link: /contact/index.html

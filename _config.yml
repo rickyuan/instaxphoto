@@ -1,14 +1,14 @@
 # ----
 # Site
 
-title: Instax365 by Grace
+title: 畅影像 365 | By 摄影师刘畅
 url: "https://www.instax365.com"
 baseurl:
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Photography for Fuji Instax Cameras.
+description: 摄影师刘畅作品集，生活、工作、旅行。
 author: 
   name: Grace
   email: 258282458@qq.com

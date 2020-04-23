@@ -5,8 +5,8 @@ title: Instax square diaries 365
 <div class="card_top">
   <a style="background-image: url(http://q89fh2b8w.bkt.clouddn.com/instaxdiary/201903/2019%203%2018.jpg);" href="" >
   <div class="card_content">
-  <div class="title">冰岛七日</div>
-  <div class="body"> 200 photos | 2015 年 10 月</div>
+  <div class="title">Instax  方形日记</div>
+  <div class="body"> 365 photos | 2019 年 2 月</div>
   </div>
   </a>
 </div>
@@ -17,11 +17,23 @@ title: Instax square diaries 365
       <a style="background-image: url('{{ gallery.image_cover }}{{site.image_process_square}}');"  title="{{ gallery.caption }}" href="{{ gallery.url }}" data-id="#{{ gallery.title | slugify }}" data-caption="{{ gallery.caption }}">
       </a>
       <div class="card_content">
-        <div class="title">冰岛七日</div>
-        <div class="body"> 200 photos | 2015 年 10 月</div>
+        <div class="title">{{gallery.title}}</div>
+        <div class="body">{{gallery.photos_num}} photos | {{gallery.create_time}}</div>
         </div>
     </li>
   {% endfor %} 
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
+  <li class="spacer"></li>
   <li class="spacer"></li>
 
   </ul>

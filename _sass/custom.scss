@@ -1,3 +1,9 @@
+.nav-left {
+	display: flex;
+	flex-direction: column; 
+	justify-content: left;
+}
+
 .gallery2 {
 	padding: 0;
 	margin: 0;
@@ -51,7 +57,7 @@
 	// height: 400px;
 	// padding-top: 45%;
 	max-height: 400px;
-	border-radius: 6px;
+	// border-radius: 6px;
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 5px;
@@ -128,10 +134,9 @@
 		margin: 10px;
 		box-sizing: border-box;
 		max-width: 1000px;
-		border-radius: 6px;
+		// border-radius: 6px;
 		overflow: hidden;
 		position: relative;
-
 		&.spacer {
 			height: 0;
 			margin-top: 0;
@@ -166,7 +171,15 @@
 	}
 }
 
-
+@media screen and (max-width: 450px) {
+	.cards {
+		li {
+			flex: auto;
+			display: block;
+			width: 100%;
+		}
+	}
+}
 .gallery_flow{
 	display: flex;
 	overflow: hidden;

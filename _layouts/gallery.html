@@ -8,6 +8,7 @@
 		{% seo %}
 
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="{{ site.baseurl }}/icofont/icofont.min.css">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
@@ -25,8 +26,8 @@
 
 	<body>
 		<div class="wrap">
-			<header>
-				<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+			<header class="nav-left">
+				<h1><a href="{{ site.url }}"><i class="icofont-hand-drawn-left" style="margin-left: -30px; margin-right: 5px;"></i></a><a href="{{ page.url }}">{{ page.title }}</a></h1>
 			</header>
 			{{ content }}
 			<footer>

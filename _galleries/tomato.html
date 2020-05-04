@@ -4,21 +4,21 @@ layout: gallery
 photos_num: 7
 create_time: 2020 年 03 月
 caption: 2015.10, we traveled to Iceland and taken some great photos. 
-image_cover: http://q89fh2b8w.bkt.clouddn.com/tomato/6EDF88A7-711A-422B-B5DD-08A6363B83BB.JPG
+image_cover: /tomato/6EDF88A7-711A-422B-B5DD-08A6363B83BB.JPG
 photos:
-  - image: http://q89fh2b8w.bkt.clouddn.com/tomato/0A02FB64-3B6E-425E-9894-95B7F3509CAA.JPG
+  - image: /tomato/0A02FB64-3B6E-425E-9894-95B7F3509CAA.JPG
     caption: Flamingo - San Jose, US
-  - image: http://q89fh2b8w.bkt.clouddn.com/tomato/0D988897-31F3-466D-8F58-E2157A59E9AC.JPG
+  - image: /tomato/0D988897-31F3-466D-8F58-E2157A59E9AC.JPG
     caption: Giraffe - Wellington, NZ
-  - image: http://q89fh2b8w.bkt.clouddn.com/tomato/102474DE-F2F3-4AE0-9552-2409EF0E8E1C.JPG
+  - image: /tomato/102474DE-F2F3-4AE0-9552-2409EF0E8E1C.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tomato/1F4A0D71-E64D-4F95-A07E-022114551B41.JPG
+  - image: /tomato/1F4A0D71-E64D-4F95-A07E-022114551B41.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tomato/5A184823-C3D8-4719-974C-C2BD458FEF0E.JPG
+  - image: /tomato/5A184823-C3D8-4719-974C-C2BD458FEF0E.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tomato/5E34A32E-1185-412E-95C1-6112B7DCD97D.JPG
+  - image: /tomato/5E34A32E-1185-412E-95C1-6112B7DCD97D.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tomato/6EDF88A7-711A-422B-B5DD-08A6363B83BB.JPG
+  - image: /tomato/6EDF88A7-711A-422B-B5DD-08A6363B83BB.JPG
     caption: Penguin - Mexico City, MX
 ---
 
@@ -27,7 +27,7 @@ photos:
   {% for photo in page.photos %}
     <!-- <li style="background-image: url('{{ photo.image }}{{site.image_process_fixheight}}')"><a title="{{ photo.caption }}" href="{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li> -->
     <a class="figure" href="">
-      <img src="{{ photo.image }}{{site.image_process_square}}">
+      <img src="{{ site.image_path_domain }}{{ photo.image }}{{site.image_process_square}}">
     </a>
     {% endfor %}  
   </div>

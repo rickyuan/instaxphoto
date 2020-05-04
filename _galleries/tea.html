@@ -4,36 +4,36 @@ layout: gallery
 photos_num: 11
 create_time: 2020 年 03 月
 caption: 2020.3, we traveled to Iceland and taken some great photos. 
-image_cover: http://q89fh2b8w.bkt.clouddn.com/tea/200421/60E592EF-8CB6-4B4D-A090-B82CE0BFD887.JPG
+image_cover: /tea/200421/60E592EF-8CB6-4B4D-A090-B82CE0BFD887.JPG
 photos:
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/0B38E7E5-8671-46D5-997B-9BFEED69573E.JPG
+  - image: /tea/200421/0B38E7E5-8671-46D5-997B-9BFEED69573E.JPG
     caption: Flamingo - San Jose, US
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/195715A9-3D14-4F7A-9BF6-5DE11C002F8B.JPG
+  - image: /tea/200421/195715A9-3D14-4F7A-9BF6-5DE11C002F8B.JPG
     caption: Giraffe - Wellington, NZ
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/31215976-8F01-4377-9F37-430915F7115B.JPG
+  - image: /tea/200421/31215976-8F01-4377-9F37-430915F7115B.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/4875ECBE-DE31-43A9-9A2C-5D8A2C13C5A7.JPG
+  - image: /tea/200421/4875ECBE-DE31-43A9-9A2C-5D8A2C13C5A7.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/4DE0D08B-E94C-4486-8F1B-65A4E0D85F41.JPG
+  - image: /tea/200421/4DE0D08B-E94C-4486-8F1B-65A4E0D85F41.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/60E592EF-8CB6-4B4D-A090-B82CE0BFD887.JPG
+  - image: /tea/200421/60E592EF-8CB6-4B4D-A090-B82CE0BFD887.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/7E829089-C79C-439E-93DA-04240BE33BEB.JPG
+  - image: /tea/200421/7E829089-C79C-439E-93DA-04240BE33BEB.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/A93168F8-0D22-4C31-B663-3E3629C1BDF8.JPG
+  - image: /tea/200421/A93168F8-0D22-4C31-B663-3E3629C1BDF8.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/CF2EB529-5E20-4FB6-9132-FD3A3596C43A.JPG
+  - image: /tea/200421/CF2EB529-5E20-4FB6-9132-FD3A3596C43A.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/DF8229FC-8416-4C31-B771-51FEA43D8EF1.JPG
+  - image: /tea/200421/DF8229FC-8416-4C31-B771-51FEA43D8EF1.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/tea/200421/F16F2C76-CD67-4E5F-9B7F-A83587557486.JPG
+  - image: /tea/200421/F16F2C76-CD67-4E5F-9B7F-A83587557486.JPG
     caption: Penguin - Mexico City, MX
 ---
 
 <div class="gallery_flow">
   {% for photo in page.photos %}
   <a class="figure" href="">
-    <img src="{{ photo.image }}{{site.image_process_square}}">
+    <img src="{{ site.image_path_domain }}{{ photo.image }}{{site.image_process_square}}">
   </a>
     <!-- <li style="background-image: url('{{ photo.image }}')"><a title="{{ photo.caption }}" href="{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li> -->
   {% endfor %}  

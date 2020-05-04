@@ -4,40 +4,40 @@ layout: gallery
 photos_num: 13
 create_time: 2019 年 11 月
 caption: 2019.11, we traveled to Iceland and taken some great photos. 
-image_cover: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/144D960B-DB14-47BA-B452-F48E296C3B27.JPG
+image_cover: /hongluoshi/191116/144D960B-DB14-47BA-B452-F48E296C3B27.JPG
 photos:
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/0289A27A-8190-4632-827C-DD17F2A64D15.JPG
+  - image: /hongluoshi/191116/0289A27A-8190-4632-827C-DD17F2A64D15.JPG
     caption: Flamingo - San Jose, US
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/0FF45226-C3B1-4A06-9919-9BF557924171.JPG
+  - image: /hongluoshi/191116/0FF45226-C3B1-4A06-9919-9BF557924171.JPG
     caption: Giraffe - Wellington, NZ
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/144D960B-DB14-47BA-B452-F48E296C3B27.JPG
+  - image: /hongluoshi/191116/144D960B-DB14-47BA-B452-F48E296C3B27.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/145131F6-1634-4FAD-9A70-6EBBD850222E.JPG
+  - image: /hongluoshi/191116/145131F6-1634-4FAD-9A70-6EBBD850222E.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/37B2EFA1-3C06-4A38-8AE0-A08174371D97.JPG
+  - image: /hongluoshi/191116/37B2EFA1-3C06-4A38-8AE0-A08174371D97.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/502260B9-1A21-428D-BFA5-4B11D8FFC524.JPG
+  - image: /hongluoshi/191116/502260B9-1A21-428D-BFA5-4B11D8FFC524.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/76055619-F2E0-4C31-B9A9-4054101A218D.JPG
+  - image: /hongluoshi/191116/76055619-F2E0-4C31-B9A9-4054101A218D.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/82B5C224-DEF7-4F3F-8CFA-4CFCE8D88D7A.JPG
+  - image: /hongluoshi/191116/82B5C224-DEF7-4F3F-8CFA-4CFCE8D88D7A.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/A5128976-34EC-4247-A638-58756024BF93.JPG
+  - image: /hongluoshi/191116/A5128976-34EC-4247-A638-58756024BF93.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/E8B3B696-14BE-4360-978E-16DA546629DF.JPG
+  - image: /hongluoshi/191116/E8B3B696-14BE-4360-978E-16DA546629DF.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/E98AF814-BE61-4842-9F5B-FC4F522ED226.JPG
+  - image: /hongluoshi/191116/E98AF814-BE61-4842-9F5B-FC4F522ED226.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/E99553C8-3B38-4FE9-A4FE-D81395720BDA.JPG
+  - image: /hongluoshi/191116/E99553C8-3B38-4FE9-A4FE-D81395720BDA.JPG
     caption: Penguin - Mexico City, MX
-  - image: http://q89fh2b8w.bkt.clouddn.com/hongluoshi/191116/EA67B08B-F12E-4A79-9455-A809969DA658.JPG
+  - image: /hongluoshi/191116/EA67B08B-F12E-4A79-9455-A809969DA658.JPG
     caption: Penguin - Mexico City, MX
 ---
 
 <div class="gallery_flow">
   {% for photo in page.photos %}
   <a class="figure" href="">
-    <img src="{{ photo.image }}{{site.image_process_square}}">
+    <img src="{{ site.image_path_domain }}{{ photo.image }}{{site.image_process_square}}">
   </a>
     <!-- <li style="background-image: url('{{ photo.image }}')"><a title="{{ photo.caption }}" href="{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li> -->
   {% endfor %}  

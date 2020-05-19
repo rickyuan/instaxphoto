@@ -20,7 +20,7 @@ social:
 
 image_process_square: ?imageView2/5/w/800/h/600/format/jpg/q/80
 image_process_fixheight: ?imageView2/1/w/800/h/800/format/jpg/q/80
-image_path_domain: http://res.instax365.com
+image_path_domain: https://res.instax365.com
 
 collections: 
   instaxdiaries:
